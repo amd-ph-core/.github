@@ -1,0 +1,10 @@
+Classification,Category,Subcategory,Definition,Compliant (Yes-1/No-0),Notes
+AMDP prerequisites,Workflow,General,Written in NextFlow,,
+AMDP prerequisites,Workflow,General,Single command: Pipelines should run in a single command. ,,
+AMDP prerequisites,Workflow,General,Cloud compatible: Pipelines should be tested on cloud computing environments. ,,
+AMDP prerequisites,Workflow,General,Static assets and large test data should be stored independently of the workflow and properly documented.,,
+AMDP prerequisites,Workflow,General,"Workflow should not rely on deprecated features (e.g., entry points should be replaced with profiles)",,
+AMDP prerequisites,Workflow,Documentation,"License should be MIT, unless otherwise specified",,
+AMDP prerequisites,Workflow,Documentation,Credits and Acknowledgements: Pipelines must properly acknowledge prior work. ,,
+AMDP prerequisites,Module,Containerization,The module container is tagged in the Elastic Container Registry for AMDP. ,,
+AMDP prerequisites,Module,Containerization,"The module container must pass security vulnerabilities tests (e.g., Trivy) ",,
