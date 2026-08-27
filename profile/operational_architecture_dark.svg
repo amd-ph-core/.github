@@ -1,113 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="700" viewBox="0 0 1280 700" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#6b7688"/>
     </marker>
-    <marker id="aw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/>
-    </marker>
     <style>
-      .h1   { font-size: 30px; font-weight: 700; fill: #e6edf3; }
-      .h2   { font-size: 15px; fill: #9198a1; }
-      .band { font-size: 15px; font-weight: 700; letter-spacing: .5px; }
-      .card { font-size: 17px; font-weight: 600; fill: #e6edf3; }
-      .cs   { font-size: 12.5px; fill: #9198a1; }
-      .stage{ font-size: 16px; font-weight: 700; fill: #ffffff; }
-      .ss   { font-size: 11.5px; fill: #c9d1d9; }
-      .edge { stroke: #6b7688; stroke-width: 2; fill: none; }
+      .h1   { font-size: 34px; font-weight: 700; fill: #e6edf3; }
+      .h2   { font-size: 17px; fill: #9198a1; }
+      .band { font-size: 17px; font-weight: 700; letter-spacing: .5px; }
+      .card { font-size: 21px; font-weight: 600; fill: #e6edf3; }
+      .cs   { font-size: 16px; fill: #9198a1; }
+      .stage{ font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .ss   { font-size: 15px; fill: #c9d1d9; }
+      .edge { stroke: #6b7688; stroke-width: 2.5; fill: none; }
     </style>
   </defs>
 
-  <rect x="0" y="0" width="1280" height="720" fill="#0d1117"/>
-  <text x="60" y="58" class="h1">amd-ph-core/tbvarpipe — How It All Fits Together</text>
-  <text x="62" y="84" class="h2">One Nextflow command assembles code, config, reference data and containers into a TB variant-calling run</text>
+  <rect x="0" y="0" width="1280" height="700" fill="#0d1117"/>
+  <text x="60" y="54" class="h1">How It All Fits Together</text>
+  <text x="62" y="86" class="h2">One Nextflow command assembles code, input, reference data and containers into a run</text>
 
   <!-- ===== TOP: the four ingredients ===== -->
-  <text x="60" y="128" class="band" fill="#a8c8f0">CODE</text>
-  <rect x="60" y="138" width="270" height="120" rx="12" fill="#131c2b" stroke="#a8c8f0" stroke-width="2"/>
-  <text x="80" y="168" class="card">Pipeline &amp; config</text>
-  <text x="80" y="192" class="cs">github: amd-ph-core/tbvarpipe @ r1.2.1</text>
-  <text x="80" y="212" class="cs">+ /configs (auto-loaded overlay)</text>
-  <text x="80" y="232" class="cs">+ /modules &amp; nf-core (pinned git_sha)</text>
+  <text x="60" y="134" class="band" fill="#adbac7">CODE</text>
+  <rect x="60" y="146" width="275" height="132" rx="12" fill="#1c2128" stroke="#adbac7" stroke-width="2"/>
+  <text x="80" y="184" class="card">Pipeline &amp; config</text>
+  <text x="80" y="218" class="cs">amd-ph-core/tbvarpipe</text>
+  <text x="80" y="246" class="cs">+ configs · modules</text>
 
-  <text x="356" y="128" class="band" fill="#e088a8">INPUT</text>
-  <rect x="356" y="138" width="270" height="120" rx="12" fill="#2a1420" stroke="#e088a8" stroke-width="2"/>
-  <text x="376" y="168" class="card">Sample sheet</text>
-  <text x="376" y="192" class="cs">samplesheet.csv (fastq_1 … fastq_8)</text>
-  <text x="376" y="212" class="cs">user data, or test data from</text>
-  <text x="376" y="232" class="cs">CDCgov/oamd-bio-test-data</text>
+  <text x="355" y="134" class="band" fill="#57d38c">INPUT</text>
+  <rect x="355" y="146" width="275" height="132" rx="12" fill="#122b1e" stroke="#57d38c" stroke-width="2"/>
+  <text x="375" y="184" class="card">Sample sheet</text>
+  <text x="375" y="218" class="cs">samplesheet.csv</text>
+  <text x="375" y="246" class="cs">your reads, or our test data</text>
 
-  <text x="652" y="128" class="band" fill="#f05870">REFERENCE</text>
-  <rect x="652" y="138" width="270" height="120" rx="12" fill="#2e1518" stroke="#f05870" stroke-width="2"/>
-  <text x="672" y="168" class="card">Static assets</text>
-  <text x="672" y="192" class="cs">one root → all reference paths</text>
-  <text x="672" y="212" class="cs">ftp.cdc.gov tarball (local)</text>
-  <text x="672" y="232" class="cs">or s3://cdc-amd-platform/... (AMDP)</text>
+  <text x="650" y="134" class="band" fill="#6cb6ff">REFERENCE</text>
+  <rect x="650" y="146" width="275" height="132" rx="12" fill="#10243a" stroke="#6cb6ff" stroke-width="2"/>
+  <text x="670" y="184" class="card">Static assets</text>
+  <text x="670" y="218" class="cs">one root → every path</text>
+  <text x="670" y="246" class="cs">tarball or S3 bucket</text>
 
-  <text x="948" y="128" class="band" fill="#f09848">CONTAINERS</text>
-  <rect x="948" y="138" width="272" height="120" rx="12" fill="#2e1e0f" stroke="#f09848" stroke-width="2"/>
-  <text x="968" y="168" class="card">Images</text>
-  <text x="968" y="192" class="cs">quay.io/us-cdcgov/</text>
-  <text x="968" y="212" class="cs">cdc-amd/&lt;tool&gt;:&lt;tag&gt;</text>
-  <text x="968" y="232" class="cs">per-process, pulled on first run</text>
+  <text x="945" y="134" class="band" fill="#54d1f5">CONTAINERS</text>
+  <rect x="945" y="146" width="275" height="132" rx="12" fill="#0e2a33" stroke="#54d1f5" stroke-width="2"/>
+  <text x="965" y="184" class="card">Images</text>
+  <text x="965" y="218" class="cs">quay.io/us-cdcgov</text>
+  <text x="965" y="246" class="cs">one per process</text>
 
   <!-- arrows down into engine -->
-  <path class="edge" d="M195,258 L195,296" marker-end="url(#a)"/>
-  <path class="edge" d="M491,258 L491,296" marker-end="url(#a)"/>
-  <path class="edge" d="M787,258 L787,296" marker-end="url(#a)"/>
-  <path class="edge" d="M1084,258 L1084,296" marker-end="url(#a)"/>
+  <path class="edge" d="M197,278 L197,310" marker-end="url(#a)"/>
+  <path class="edge" d="M492,278 L492,310" marker-end="url(#a)"/>
+  <path class="edge" d="M787,278 L787,310" marker-end="url(#a)"/>
+  <path class="edge" d="M1082,278 L1082,310" marker-end="url(#a)"/>
 
   <!-- ===== ENGINE BAR ===== -->
-  <rect x="60" y="298" width="1160" height="78" rx="14" fill="#2b4a78"/>
-  <text x="86" y="332" class="stage" font-size="19">nextflow run amd-ph-core/tbvarpipe  -latest  -profile docker/singularity  -c local.config</text>
-  <text x="86" y="358" class="ss" font-size="13" fill="#dbe9ff">Merges config (base → profile → configs → local.config) · resolves reference paths from one static-assets root · pulls containers</text>
+  <rect x="60" y="318" width="1160" height="86" rx="14" fill="#22406e"/>
+  <text x="86" y="358" class="stage" font-size="22">nextflow run amd-ph-core/tbvarpipe -profile docker -c local.config</text>
+  <text x="86" y="388" class="ss">merges config · resolves reference paths · pulls containers</text>
 
-  <path class="edge" d="M640,376 L640,410" marker-end="url(#a)"/>
+  <path class="edge" d="M640,404 L640,440" marker-end="url(#a)"/>
 
   <!-- ===== PIPELINE STAGES ===== -->
-  <text x="60" y="404" class="band" fill="#9198a1">PIPELINE STAGES</text>
+  <text x="60" y="436" class="band" fill="#9198a1">PIPELINE STAGES</text>
 
-  <!-- stage boxes -->
   <g>
-    <rect x="60" y="420" width="205" height="150" rx="12" fill="#272f3d"/>
-    <text x="78" y="450" class="stage">1 · Preprocess</text>
-    <text x="78" y="476" class="ss">CAT_FASTQ (merge lanes)</text>
-    <text x="78" y="496" class="ss">TRIMMOMATIC (QC / trim)</text>
+    <rect x="60" y="450" width="216" height="144" rx="12" fill="#2d333b"/>
+    <text x="78" y="488" class="stage">1 · Preprocess</text>
+    <text x="78" y="522" class="ss">merge lanes · trim</text>
 
-    <rect x="298" y="420" width="205" height="150" rx="12" fill="#272f3d"/>
-    <text x="316" y="450" class="stage">2 · Decontaminate</text>
-    <text x="316" y="476" class="ss">Clockwork MINIMAP2</text>
-    <text x="316" y="496" class="ss">REMOVECONTAM (optional)</text>
+    <rect x="296" y="450" width="216" height="144" rx="12" fill="#2d333b"/>
+    <text x="314" y="488" class="stage">2 · Decontaminate</text>
+    <text x="314" y="522" class="ss">Clockwork</text>
 
-    <rect x="536" y="420" width="205" height="150" rx="12" fill="#272f3d"/>
-    <text x="554" y="450" class="stage">3 · Variant calling</text>
-    <text x="554" y="476" class="ss">BWA + PICARD (align/BAM)</text>
-    <text x="554" y="496" class="ss">GATK4 MUTECT2 → filter</text>
-    <text x="554" y="516" class="ss">SNPEFF annotate</text>
+    <rect x="532" y="450" width="216" height="144" rx="12" fill="#2d333b"/>
+    <text x="550" y="488" class="stage">3 · Variant calling</text>
+    <text x="550" y="522" class="ss">BWA · Mutect2</text>
+    <text x="550" y="548" class="ss">SnpEff</text>
 
-    <rect x="774" y="420" width="205" height="150" rx="12" fill="#272f3d"/>
-    <text x="792" y="450" class="stage">4 · Lineage &amp; report</text>
-    <text x="792" y="476" class="ss">coverage · structural variants</text>
-    <text x="792" y="496" class="ss">interpretation · lineage</text>
-    <text x="792" y="516" class="ss">REPORT → PDF → TAR</text>
+    <rect x="768" y="450" width="216" height="144" rx="12" fill="#2d333b"/>
+    <text x="786" y="488" class="stage">4 · Lineage</text>
+    <text x="786" y="522" class="ss">coverage · lineage</text>
+    <text x="786" y="548" class="ss">PDF report</text>
 
-    <rect x="1012" y="420" width="208" height="150" rx="12" fill="#8a1d49"/>
-    <text x="1030" y="450" class="stage">5 · Aggregate</text>
-    <text x="1030" y="476" class="ss">MULTIQC summary</text>
-    <text x="1030" y="496" class="ss">results/ + pipeline_info/</text>
-    <text x="1030" y="516" class="ss">(timeline · report · trace)</text>
+    <rect x="1004" y="450" width="216" height="144" rx="12" fill="#17612a"/>
+    <text x="1022" y="488" class="stage">5 · Aggregate</text>
+    <text x="1022" y="522" class="ss">MultiQC · results/</text>
   </g>
 
   <!-- stage arrows -->
-  <path class="edge" d="M265,495 L298,495" marker-end="url(#a)"/>
-  <path class="edge" d="M503,495 L536,495" marker-end="url(#a)"/>
-  <path class="edge" d="M741,495 L774,495" marker-end="url(#a)"/>
-  <path class="edge" d="M979,495 L1012,495" marker-end="url(#a)"/>
+  <path class="edge" d="M276,522 L296,522" marker-end="url(#a)"/>
+  <path class="edge" d="M512,522 L532,522" marker-end="url(#a)"/>
+  <path class="edge" d="M748,522 L768,522" marker-end="url(#a)"/>
+  <path class="edge" d="M984,522 L1004,522" marker-end="url(#a)"/>
 
-  <!-- ===== FOOTER: environment portability ===== -->
-  <rect x="60" y="600" width="1160" height="76" rx="12" fill="#161b22" stroke="#30363d"/>
-  <text x="82" y="632" class="band" fill="#e6edf3">SAME PIPELINE, ANY ENVIRONMENT</text>
-  <text x="82" y="658" class="cs" font-size="13.5">Only two things change per environment — the static-assets root and the container org — swapped by an overlay profile. Pipeline logic stays identical.</text>
-
-  <text x="60" y="704" class="cs">amd-ph-core/tbvarpipe · configs · modules · CDCgov/oamd-bio-test-data · quay.io/us-cdcgov</text>
+  <!-- ===== FOOTER ===== -->
+  <rect x="60" y="614" width="1160" height="70" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="82" y="644" class="band" fill="#e6edf3">SAME PIPELINE, ANY ENVIRONMENT</text>
+  <text x="82" y="670" class="cs">Only the static-assets root and the container registry change per environment.</text>
 </svg>
