@@ -10,6 +10,8 @@ Advanced Molecular Detection (OAMD).
 | --- | --- |
 | `profile/amd_logo.png` | AMD Platform logo, light-mode variant |
 | `profile/amd_logo_dark.png` | AMD Platform logo, dark-mode variant |
+| `profile/operational_architecture.svg` | Diagram of how code, input, reference assets, and containers assemble into a pipeline run, light-mode variant |
+| `profile/operational_architecture_dark.svg` | The same diagram, dark-mode variant |
 | `standards/` | `ph-core` conformance checklists, one CSV per tier |
 
 These files are referenced by URL from READMEs across the namespace, which is why this
