@@ -8,6 +8,7 @@ Advanced Molecular Detection (OAMD).
 
 | Path | Purpose |
 | --- | --- |
+| `profile/README.md` | The organization profile page GitHub renders at [github.com/amd-ph-core](https://github.com/amd-ph-core) |
 | `profile/phcore_header.svg` | `ph-core` masthead for the organization profile, light-mode variant |
 | `profile/phcore_header_dark.svg` | `ph-core` masthead, dark-mode variant |
 | `profile/amd_logo.png` | AMD Platform logo, light-mode variant |
@@ -34,5 +35,10 @@ used directly as a review worksheet.
 ## Organization profile
 
 GitHub renders `profile/README.md` from this repository as the public organization
-profile page. That file is not present yet — the profile is still in review. Adding it
-here publishes the profile immediately.
+profile page at [github.com/amd-ph-core](https://github.com/amd-ph-core). Edits to that
+file go live as soon as they land on `main`.
+
+A members-only variant of the profile is maintained in the private `.github-private`
+repository, which GitHub shows to signed-in organization members in place of this one.
+The two are kept in sync deliberately; change both together unless the intent is for
+members to see something different.
