@@ -96,6 +96,19 @@ nextflow run amd-ph-core/tbvarpipe -r 1.2.2 \
 
 More pipelines are on the way. This table lists everything that is public today; it grows as each one is released.
 
+## Tools
+
+Standalone bioinformatics tools maintained in this namespace. Listed alphabetically. Each one is installable on its own and is also packaged in the container images the pipelines use.
+
+| Tool | Description | Docs |
+| --- | --- | --- |
+| [`srst2`](https://github.com/amd-ph-core/srst2) | Short Read Sequence Typing for bacterial pathogens &mdash; MLST and resistance/virulence gene detection direct from Illumina reads. A Python 3 maintenance fork of [`katholt/srst2`](https://github.com/katholt/srst2) for current bowtie2 / samtools | [README](https://github.com/amd-ph-core/srst2#readme) |
+
+```bash
+pip install git+https://github.com/amd-ph-core/srst2@v1.0.0
+srst2 --version
+```
+
 ## Shared components
 
 | Component | Purpose |
