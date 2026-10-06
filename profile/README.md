@@ -114,8 +114,8 @@ pip install git+https://github.com/amd-ph-core/srst2@v1.0.0
 | --- | --- |
 | [`configs`](https://github.com/amd-ph-core/configs) | Configuration profiles and pipeline configs for AMD Platform environments |
 | [`modules`](https://github.com/amd-ph-core/modules) | Tool-specific Nextflow DSL2 module files and their documentation |
-| [`quay.io/us-cdcgov/cdc-amd`](https://quay.io/search?q=cdc-amd) | Public container images backing the pipelines &mdash; each one documents its key software, versions, licenses, and SBOM license summary |
-| [`s3://cdc-amd-platform`](https://cdc-amd-platform.s3.us-east-1.amazonaws.com/index.html) | Public reference assets and test data used by the pipelines &mdash; browsable file listing, with anonymous downloads via `aws s3 --no-sign-request` |
+| [<code>quay.io/&#8288;us&#8209;cdcgov/&#8288;cdc&#8209;amd</code>](https://quay.io/search?q=cdc-amd) | Public container images for the pipelines, each with software versions, licenses, and an SBOM summary |
+| [<code>s3://&#8288;cdc&#8209;amd&#8209;platform</code>](https://cdc-amd-platform.s3.us-east-1.amazonaws.com/index.html) | Public reference assets and test data, browsable and downloadable without credentials |
 
 ---
 
