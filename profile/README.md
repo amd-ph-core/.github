@@ -57,8 +57,6 @@ Reference assets and test data the pipelines download at run time. Browse the bu
 </tr>
 </table>
 
-### How it all fits together
-
 <div align="center">
 
 <a href="https://raw.githubusercontent.com/amd-ph-core/.github/main/profile/operational_architecture.svg">
@@ -98,15 +96,16 @@ More pipelines are on the way. This table lists everything that is public today;
 
 ## Tools
 
-Standalone bioinformatics tools maintained in this namespace. Listed alphabetically. Each one is installable on its own and is also packaged in the container images the pipelines use.
+Standalone software tools for working with the pipelines and the AMD Platform, from bioinformatics utilities to the platform's Python SDK. Listed alphabetically. Each one is installable on its own with `pip`.
 
 | Tool | Description | Docs |
 | --- | --- | --- |
+| [`amdp-python-sdk`](https://pypi.org/project/amdp-python-sdk/) | Python SDK for the AMD Platform API services &mdash; connect with client credentials, navigate workspaces and projects, and upload sample sheets programmatically | [PyPI](https://pypi.org/project/amdp-python-sdk/) |
 | [`srst2`](https://github.com/amd-ph-core/srst2) | Short Read Sequence Typing for bacterial pathogens &mdash; MLST and resistance/virulence gene detection direct from Illumina reads. A Python 3 maintenance fork of [`katholt/srst2`](https://github.com/katholt/srst2) for current bowtie2 / samtools | [README](https://github.com/amd-ph-core/srst2#readme) |
 
 ```bash
+pip install amdp-python-sdk
 pip install git+https://github.com/amd-ph-core/srst2@v1.0.0
-srst2 --version
 ```
 
 ## Shared components
