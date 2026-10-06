@@ -37,8 +37,3 @@ used directly as a review worksheet.
 GitHub renders `profile/README.md` from this repository as the public organization
 profile page at [github.com/amd-ph-core](https://github.com/amd-ph-core). Edits to that
 file go live as soon as they land on `main`.
-
-A members-only variant of the profile is maintained in the private `.github-private`
-repository, which GitHub shows to signed-in organization members in place of this one.
-The two are kept in sync deliberately; change both together unless the intent is for
-members to see something different.

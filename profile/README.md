@@ -96,12 +96,12 @@ More pipelines are on the way. This table lists everything that is public today;
 
 ## Tools
 
-Standalone software tools for working with the pipelines and the AMD Platform, from bioinformatics utilities to the platform's Python SDK. Listed alphabetically. Each one is installable on its own with `pip`.
+Standalone software tools for working with the pipelines and the AMD Platform, from bioinformatics utilities to the platform's Python SDK. Listed alphabetically.
 
 | Tool | Description | Docs |
 | --- | --- | --- |
-| [`amdp-python-sdk`](https://pypi.org/project/amdp-python-sdk/) | Python SDK for the AMD Platform API services &mdash; connect with client credentials, navigate workspaces and projects, and upload sample sheets programmatically | [PyPI](https://pypi.org/project/amdp-python-sdk/) |
-| [`srst2`](https://github.com/amd-ph-core/srst2) | Short Read Sequence Typing for bacterial pathogens &mdash; MLST and resistance/virulence gene detection direct from Illumina reads. A Python 3 maintenance fork of [`katholt/srst2`](https://github.com/katholt/srst2) for current bowtie2 / samtools | [README](https://github.com/amd-ph-core/srst2#readme) |
+| [<code>amdp&#8209;python&#8209;sdk</code>](https://pypi.org/project/amdp-python-sdk/) | Python client for the AMD Platform API services | [PyPI](https://pypi.org/project/amdp-python-sdk/) |
+| [`srst2`](https://github.com/amd-ph-core/srst2) | Bacterial MLST and resistance/virulence gene typing from Illumina reads; Python 3 fork of [`katholt/srst2`](https://github.com/katholt/srst2) | [README](https://github.com/amd-ph-core/srst2#readme) |
 
 ```bash
 pip install amdp-python-sdk
