@@ -22,15 +22,15 @@ repository is public.
 
 ## Standards checklists
 
-`standards/` holds the `v1.0.0` conformance checklist, split by tier. Each row is one
+`standards/` holds the `v1.0.2` conformance checklist, split by tier. Each row is one
 criterion, with `Compliant (Yes-1/No-0)` and `Notes` columns left blank so a file can be
 used directly as a review worksheet.
 
 | Tier | File | Items |
 | --- | --- | --- |
-| 1 | [`...tier1-amd-platform-prerequisites.csv`](standards/Workflow-Checklist-v1.0.0-tier1-amd-platform-prerequisites.csv) | 9 |
-| 2 | [`...tier2-ph-core-requirements.csv`](standards/Workflow-Checklist-v1.0.0-tier2-ph-core-requirements.csv) | 31 |
-| 3 | [`...tier3-ph-core-recommendations.csv`](standards/Workflow-Checklist-v1.0.0-tier3-ph-core-recommendations.csv) | 107 |
+| 1 | [`...tier1-amd-platform-prerequisites.csv`](standards/Workflow-Checklist-v1.0.2-tier1-amd-platform-prerequisites.csv) | 9 |
+| 2 | [`...tier2-ph-core-requirements.csv`](standards/Workflow-Checklist-v1.0.2-tier2-ph-core-requirements.csv) | 34 |
+| 3 | [`...tier3-ph-core-recommendations.csv`](standards/Workflow-Checklist-v1.0.2-tier3-ph-core-recommendations.csv) | 95 |
 
 ## Organization profile
 

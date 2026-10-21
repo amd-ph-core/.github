@@ -1,0 +1,10 @@
+Classification,Category,Subcategory,Definition,Compliant (Yes-1/No-0),Notes
+General prerequisites,Workflow,General,Written in Nextflow.,,
+General prerequisites,Workflow,General,Single command: Pipelines should run in a single command.,,
+General prerequisites,Workflow,General,Cloud compatible: Pipelines should be tested on cloud computing environments.,,
+General prerequisites,Workflow,General,Static assets and large test data should be stored independently of the workflow and properly documented.,,
+General prerequisites,Workflow,General,"Workflow should not rely on deprecated features (e.g., entry points should be replaced with profiles), as reported by nextflow lint.",,
+General prerequisites,Workflow,Documentation,"Software license: Pipelines must be released with the MIT license (MIT-0 for government-authored work), unless otherwise specified.",,
+General prerequisites,Workflow,Documentation,"Credits and Acknowledgements: Acknowledge the original authors of any reused pipeline code or work: link to the original repository and authors, keep existing credits intact, and follow the source's license terms.",,
+General prerequisites,Module,Containerization,Each module's container image must be published with a specific version tag to the hosting platform's container registry.,,
+General prerequisites,Module,Containerization,"The module container must pass security vulnerabilities tests (e.g., Trivy).",,
