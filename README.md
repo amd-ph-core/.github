@@ -22,8 +22,7 @@ repository is public.
 
 ## Standards checklists
 
-`standards/` holds the `v1.0.2` conformance checklist, split by tier. Each row is one
-criterion, with `Compliant (Yes-1/No-0)` and `Notes` columns left blank so a file can be
+`standards/` holds the `v1.0.2` conformance checklist, split by tier. Each row is one criterion, with `Compliant (Yes-1/No-0)` and `Notes` columns left blank so a file can be
 used directly as a review worksheet.
 
 | Tier | File | Items |
