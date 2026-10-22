@@ -123,7 +123,7 @@ pip install git+https://github.com/amd-ph-core/srst2@v1.0.0
 
 Pipelines, modules, and configs in this namespace are developed against the `ph-core` specification, a public health profile layered on top of the [nf-core](https://nf-co.re/) community standards:
 
-- **Tier 1 &mdash; General prerequisites.** Blocking requirements for platform deployment. &mdash; [checklist, 9 items](https://github.com/amd-ph-core/.github/blob/main/standards/Workflow-Checklist-v1.0.2-tier1-amd-platform-prerequisites.csv)
+- **Tier 1 &mdash; General prerequisites.** Blocking requirements for platform deployment. &mdash; [checklist, 9 items](https://github.com/amd-ph-core/.github/blob/main/standards/Workflow-Checklist-v1.0.2-tier1-general-prerequisites.csv)
 - **Tier 2 &mdash; `ph-core` requirements.** Structure, testing, containers, and documentation that every pipeline must follow. &mdash; [checklist, 34 items](https://github.com/amd-ph-core/.github/blob/main/standards/Workflow-Checklist-v1.0.2-tier2-ph-core-requirements.csv)
 - **Tier 3 &mdash; `ph-core` recommendations.** Practices that improve portability, findability, and reuse. &mdash; [checklist, 95 items](https://github.com/amd-ph-core/.github/blob/main/standards/Workflow-Checklist-v1.0.2-tier3-ph-core-recommendations.csv)
 
